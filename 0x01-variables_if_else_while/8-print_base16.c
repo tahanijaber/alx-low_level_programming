@@ -2,19 +2,20 @@
 
 /**
  * main - Prints a hexadecimal string
- *
- * Return:0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i, y;
-	for (i = 0; i < 10; i++)
+	int n;
+	char ch;
+
+	for (n = 48; n < 58; n++)
 	{
-		putchar (i + '0');
+		putchar(n);
 	}
-	for (y = 'a'; y <= 'f'; y++)
+	for (ch = 'a'; ch <= 'f'; ch++)
 	{
-		putchar (y);
+		putchar(ch);
 	}
 	putchar('\n');
 	return (0);
