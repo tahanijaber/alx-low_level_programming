@@ -1,13 +1,14 @@
 #include <stdio.h>
-
 /**
- * main - Prints some letters of alphabet
+ * Get a random number and check its last digit, compare it with 5
+ *
  * Return: 0
  */
 int main(void)
 {
-	char ch = 'b';
-	while (ch <= 'm')
+	char ch = 'a';
+
+	while (ch <= 'z')
 	{
 		if (ch != 'e' && ch != 'q')
 		{
