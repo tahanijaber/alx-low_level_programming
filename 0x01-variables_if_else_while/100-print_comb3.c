@@ -1,30 +1,35 @@
 #include <stdio.h>
 /**
- * main - Printing numbers between 01 to 89.
+ * main - Entry point
  *
- * Return : 0 
+ * Return: 0
  */
 int main(void)
 {
-	int i, e;
+int x, y;
 
-	i = 48;
-	e = 48;
-
-	while (e < 58)
-	{
-		if (e != i && e < i)
-		{
-			putchar(e);
-			putchar(i);
-			if (i == 57 && e == 56)
-			{
-				break;
-			}
-			i++;
-		}
-		e++;
-	}
-	putchar('\n');
-	return (0);
+for (x = 48; x <= 57; x++)
+{
+for (y = 48; y <= 57; y++)
+{
+if (x == y || y <= x)
+{
+}
+else
+{
+putchar(x);
+putchar(y);
+if (x == 56 && y == 57)
+{
+}
+else
+{
+putchar(44);
+putchar(' ');
+}
+}
+}
+}
+putchar('\n');
+return (0);
 }
