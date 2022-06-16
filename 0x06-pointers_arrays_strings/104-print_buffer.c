@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
- * print_line - prints a s bytes of a buffer
+ * print_buffer - prints a buffer
  * @b: buffer.
  * @size: size of buffer.
  * Return: no return.
@@ -21,7 +22,7 @@ void print_buffer(char *b, int size)
 			{
 				if (k % 2 == 0)
 					printf(" ");
-				if (k < size)a
+				if (k < size)
 					printf("%.2x", *(b + k));
 				else
 					printf("  ");
@@ -33,7 +34,7 @@ void print_buffer(char *b, int size)
 					break;
 				if (*(b + l) < 32 || *(b + l) > 126)
 					printf("%c", '.');
-				else 
+				else
 					printf("%c", *(b + l));
 			}
 			printf("\n");
